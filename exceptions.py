@@ -1,4 +1,7 @@
 # Learning exceptions
+
+
+# TypeError
 def add_numbers(a, b):
     try:
         result = a + b
@@ -9,3 +12,18 @@ def add_numbers(a, b):
 
 # Example usage
 add_numbers(5, "10")
+print("")
+
+
+# KeyError
+my_dict = {"name": "Alice", "age": 30, "city": "New York"}
+
+
+def get_value(dictionary, key):
+    value = dictionary[key]
+    print(f"The value for '{key}' is: {value}")
+
+
+# Example usage
+get_value(my_dict, "name")
+get_value(my_dict, "occupation")
